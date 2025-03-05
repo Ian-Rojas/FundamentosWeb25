@@ -1,0 +1,155 @@
+/* Estilos generales */
+/* Asegurar que el body no tenga margen que empuje el logo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.login-container {
+    background: white;
+    padding: 6vh;
+    border-radius: 3vh;
+    box-shadow: 0 0.8vh 2vh rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 45vh;
+    justify-content: flex-start;
+}
+/* Título */
+h2 {
+    margin-bottom: 2vh;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+/* Texto en color corporativo */
+.highlight {
+    color: #00bfa5;
+    font-weight: bold;
+}
+
+/* Subtítulo */
+.elemento-p {
+    margin-bottom: 5vh;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Etiquetas */
+label {
+    text-align: left;
+    font-size: 2vh;
+    font-weight: bold;
+    margin-top: 1.5vh;
+}
+
+/* Campos de entrada */
+input {
+    padding: 1.8vh;
+    margin-top: 1vh;
+    border: 0.2vh solid #D0D0D0;
+    border-radius: 4vh;
+    width: calc(100% - 4vh);
+    font-size: 1.7vh;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor de la contraseña */
+.password-container {
+    position: relative;
+}
+
+/* Icono de ojo */
+.eye-icon {
+    position: absolute;
+    right: 1.5vh;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Enlace de contraseña olvidada */
+.forgot-password {
+    color: #6200ea;
+    font-size: 2vh;
+    margin-top: 1.5vh;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Botones */
+.btn {
+    margin-top: 2.5vh;
+    padding: 2vh;
+    border: none;
+    border-radius: 4vh;
+    cursor: pointer;
+    font-size: 2.5vh;
+    width: 100%;
+}
+
+.primary {
+    background-color: #00bfa5;
+    color: white;
+}
+
+.secondary {
+    background: none;
+    border: 0.5vh solid #00bfa5;
+    color: #00bfa5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vh;
+}
+
+/* Icono de huella */
+.fingerprint-icon {
+    font-size: 2.5vh;
+}
+
+/* Enlace de volver */
+.back-link {
+    display: block;
+    margin-top: 2.5vh;
+    color: #00bfa5;
+    text-decoration: none;
+    font-size: 2vh;
+}
+/* Fijar el header arriba */
+.consalud-logo {
+    position: absolute;
+    top: 0; /* Pega el logo a la parte superior */
+    left: 13vh; /* Lo centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centrado */
+    padding: 5vh 0;
+    margin: 1vh;
+}
+
+/* Ajustar tamaño del logo */
+.logo-container img {
+    max-width: 18vh;
+    height: auto;
+}
+
+
+.login {
+    margin-left: 31vh;
+}
+.password {
+    max-width: 4vh;
+    margin-top: 1.4vh;
+    margin-right: 1.7vh;
+}
+.letra {
+    font-size: 1.7vh;
+}
