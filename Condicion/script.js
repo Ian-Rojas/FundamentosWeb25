@@ -1,9 +1,12 @@
 console.log("Funcionando correctamente");
 
-function sumaIndices(){
-    let array = [1,2,3,4,5,6,7];
-    let suma = array[0] + array[1] + array[2] + array[3] + array[4] + array[5] + array[6];
-    alert(`El arreglo es ${array.join(" - ")}:\nResultado ${suma} `)
+function temperaturaC(){
+    let temp = 16;
+    if (temp <= 0) {
+        alert("Hace frío");
+    } else if (temp) {
+        alert("La temperatura es agradable");
+    }
 }
 
 function Productopares(){
