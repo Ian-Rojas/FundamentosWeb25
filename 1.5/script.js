@@ -11,7 +11,7 @@ function verificar() {
 function verificarDescuento() {
     let edad = prompt("Ingrese su edad")
     let esEstudiante = confirm("¿Eres un estudiante?")
-    if (edad > 60 || esEstudiante === true) {
+    if (edad >= 60 || esEstudiante === true) {
         alert("Descuento Aplicado");
     } else {
         alert("No tienes descuento");
@@ -29,5 +29,21 @@ function Validacion() {
 }
 
 function Encender() {
-    let energiaSuficiente = confirm("")
+    let energiaSuficiente = confirm("El dispositivo tiene la energia suficiente?")
+    let interruptorEncendido = confirm("El interruptor esta encendido?")
+    if (energiaSuficiente === true && interruptorEncendido === true) { 
+        alert("Maquina Encendida");
+    } else {
+        alert("No se puede encender la maquina");
+    }
+}
+
+function zonadeAcceso() {
+    let bloqueado = confirm("Esta la entrada bloqueada?")
+    let tieneCredenciales = confirm("Tiene las credenciales para acceder al estacionamiento?")
+    if (bloqueado || !tieneCredenciales) {
+        alert("Acceso Permitido");
+    } else {
+        alert("Acceso Denegado");
+    }
 }
