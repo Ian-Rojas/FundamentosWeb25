@@ -7,17 +7,7 @@ function multiplicar() {
         alert(`Tabla del ${numero}:\n${array.join(" - ")}`);
     }
 
-function sumarNNumeros() {
-    let cantidad = parseInt(prompt("¿Cuántos números deseas sumar?"));
-    let suma = 0;
-    let array = [];
-    for (let i = 1; i <= cantidad; i++) {
-        let num = parseFloat(prompt(`Ingrese el número ${i} de ${cantidad}:`));
-        array.push(num);
-        suma += num;
-    }
-    alert(`Números ingresados: ${array.join(" + ")}\nTotal = ${suma}`);
-}
+
 
 function paresEntreNumeros() {
     let inicio = parseInt(prompt("Ingrese el número inicial:"));
