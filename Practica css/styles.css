@@ -1,0 +1,244 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Barra de navegación */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-title {
+    color: white;
+    font-size: 1.7rem;
+    margin-left: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a.activo {
+    font-weight: bold;
+}
+
+.boton {
+    background-color: #00BCE3;
+    color: white;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px black;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #009BB2;
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 60px;
+}
+
+/* Tarjeta de perfil */
+.tarjeta-perfil {
+    margin-top: 50px;
+    width: 500px;
+    height: 325px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.encabezado-perfil {
+    height: 100px;
+    background-color: #17A2B8;
+    position: relative;
+}
+
+.avatar-perfil {
+    margin: 0 auto;
+    position: relative;
+    top: -30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #f4f4f4;
+}
+
+.avatar-perfil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.info-perfil {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+
+.info-perfil h2 {
+    font-size: 1.6rem;
+    margin-top: -20px;
+    margin-bottom: 5px;
+}
+
+.info-perfil .ubicacion {
+    color: #666;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.info-perfil .ubicacion .icono {
+    width: 12px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.info-perfil .descripcion {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    margin-top: 5px;
+}
+
+.editar-perfil {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.editar-perfil .icono {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+/* Panel de educación */
+.panel-educacion {
+    width: 400px;
+    height: 150px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.titulo-educacion {
+    font-size: 1.5rem;
+    color: black;
+    padding: 5px;
+    border-radius: 8px 8px 0 0;
+    margin: -10px -10px 10px -10px;
+    position: relative;
+    z-index: 1;
+    width: 410px;
+}
+
+.fecha-educacion {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+/* Contenedor derecho */
+.contenedor-derecho {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+/* Paneles adicionales */
+.panel-conexiones {
+    width: 400px;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.panel-solicitudes {
+    width: 400px;
+    height: 150px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* Imágenes de solicitud */
+.imagen-solicitud {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* Ítem de solicitud/conexión */
+.item-solicitud, .item-conexion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item-solicitud p, .item-conexion p {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.conexion {
+    
+    align-items: flex-start;
+}
