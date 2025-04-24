@@ -1,6 +1,7 @@
 * {
     margin: 0 auto;
     padding: 0 auto;
+    outline: solid 1px red;
 }
 
 /* Estilos generales */
@@ -17,7 +18,6 @@ body {
     align-items: center;
     background-color: #333;
     padding: 20px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nav-title {
@@ -163,21 +163,18 @@ body {
     height: 150px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     padding: 10px;
     margin-top: 30px;
 }
 
-.titulo-educacion {
-    font-size: 1.5rem;
+.titulo-educaciones {
+    font-size: 1.2rem;
     color: black;
-    padding: 5px;
     border-radius: 8px 8px 0 0;
-    margin: -10px -10px 10px -10px;
-    position: relative;
-    z-index: 1;
-    width: 410px;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .fecha-educacion {
@@ -198,7 +195,7 @@ body {
     height: auto;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     padding: 10px;
     display: flex;
@@ -208,21 +205,16 @@ body {
 
 .panel-solicitudes {
     width: 400px;
-    height: 150px;
+    height: 200px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
-    margin-top: 10px;
-    padding: 10px;
 }
 
 /* Imágenes de solicitud */
 .imagen-solicitud {
     width: 30px;
-    height: auto;
-    margin-right: 10px;
-    margin-top: 10px;
 }
 
 /* Ítem de solicitud/conexión */
@@ -238,7 +230,21 @@ body {
     color: #333;
 }
 
-.conexion {
-    
-    align-items: flex-start;
+.conexiones-amigos {
+}
+
+.box-tusconexiones {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.solicitud-conexion {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+
 }
