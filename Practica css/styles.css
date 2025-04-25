@@ -1,7 +1,6 @@
 * {
     margin: 0 auto;
     padding: 0 auto;
-    outline: solid 1px red;
 }
 
 /* Estilos generales */
@@ -170,12 +169,12 @@ body {
 }
 
 .titulo-educaciones {
-    font-size: 1.2rem;
-    color: black;
-    border-radius: 8px 8px 0 0;
-    padding: 10px;
-    margin-top: 10px;
+    text-align: left; 
+    margin-bottom: 15px; 
+    font-size: 1rem;
+    color: #333;
 }
+
 
 .fecha-educacion {
     color: #666;
@@ -201,15 +200,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    text-align: left;
 }
 
 .panel-solicitudes {
-    width: 400px;
-    height: 200px;
+    text-align: left; 
+    padding: 15px; 
+    width: 18em; 
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    margin: 0 auto;
 }
 
 /* Imágenes de solicitud */
@@ -231,20 +231,91 @@ body {
 }
 
 .conexiones-amigos {
-}
-
-.box-tusconexiones {
+    text-align: left;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+    width: 20em;
 }
 
+
+
 .solicitud-conexion {
-    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 10px;
+    width: 100%; 
 }
 
 .row {
-    display: flex;
+    margin-bottom: 10px;
+    width: 100%; 
+}
 
+.panel-solicitudes{
+    text-align: left; 
+    margin-bottom: 15px; 
+    font-size: 1rem;
+    color: #333;
+}
+
+.solicitud-conexiones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; 
+}
+
+.solicitud-conexiones p {
+    display: flex;
+    align-items: center; 
+    margin: 0; 
+    gap: 8px;
+}
+
+.fila-solicitud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.info-usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.acciones {
+    display: flex;
+    gap: 10px; 
+}
+
+.confirmacion {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.confirmacion:hover {
+    transform: scale(1.1);
+}
+
+.panel-solicitudes {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.titulo-educaciones {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
 }
