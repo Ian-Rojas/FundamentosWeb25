@@ -275,6 +275,11 @@ body {
     gap: 8px;
 }
 
+.confirmacion {
+    width: 25px;
+    height: 25px;
+}
+
 .fila-solicitud {
     display: flex;
     justify-content: space-between;
@@ -297,25 +302,17 @@ body {
 .confirmacion {
     width: 25px;
     height: 25px;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.confirmacion:hover {
-    transform: scale(1.1);
 }
 
 .panel-solicitudes {
-    width: 100%;
+    width: 18em;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    padding: 15px;
-    margin-bottom: 20px;
 }
 
 .titulo-educaciones {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 15px;
     color: #333;
-}
+}    
