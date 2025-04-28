@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Página de Perfil</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <!-- Encabezado de navegación -->
     <header class="nav">
@@ -17,7 +14,7 @@
             <li><a href="#" class="activo">Inicio</a></li>
             <li><a href="#">Mi perfil</a></li>
             <li><a href="#">Conexiones</a></li>
-            <li><a href="#">Cerrar sesión</a></li>
+            <li><a href="#" class="boton-logout">Cerrar sesión</a></li>
         </ul>
     </header>
     <!-- Contenedor principal -->
@@ -47,23 +44,26 @@
         <div class="grupo-paneles-2">
             <!-- Solicitudes de conexión -->
             <div class="panel-solicitudes">
-                <h2 class="titulo-educaciones">Solicitudes de Conexión</h2>
+                <div class="row">
+                    <h2 class="titulo-educaciones">Solicitudes de Conexión</h2>
+                    <button href="#" class="ver-todas">Ver Todas</button>
+                </div>
                 <div class="solicitud-conexiones">
                     <!-- Solicitud 1 -->
-                    <div class="fila-solicitud">
+                    <div class="row">
                         <div class="info-usuario">
                             <p><img src="img/user-circle.png" alt="Avatar de perfil" class="imagen-solicitud">
-                            Steve Jobs</p>
+                                Steve Jobs</p>
                         </div>
                         <div class="acciones">
                             <img src="img/check-icon.png" alt="Confirmar" class="confirmacion">
                             <img src="img/delete-1-icon.png" alt="Cancelar" class="confirmacion">
                         </div>
                     </div>
-                    <div class="fila-solicitud">
+                    <div class="row">
                         <div class="info-usuario">
                             <p><img src="img/user-circle.png" alt="Avatar de perfil" class="imagen-solicitud">
-                            Bill Gates</p>
+                                Bill Gates</p>
                         </div>
                         <div class="acciones">
                             <img src="img/check-icon.png" alt="Confirmar" class="confirmacion">
@@ -75,7 +75,7 @@
             <section class="conexiones-amigos">
                 <div class="solicitud-conexion">
                     <div class="row">
-                        <h2 class="titulo-educaciones">Tus conexiones</h2>
+                        <h2 class="titulo-educacione">Tus conexiones</h2>
                     </div>
                     <div class="row">
                         <p><img src="img/user-circle.png" alt="Avatar de perfil" class="imagen-solicitud">
@@ -98,4 +98,5 @@
         </div>
     </div>
 </body>
+
 </html>
