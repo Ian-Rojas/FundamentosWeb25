@@ -76,9 +76,9 @@ body {
 
 /* Tarjeta de perfil */
 .tarjeta-perfil {
-    margin-top: 0px;
-    width: 500px;
-    height: 325px;
+    margin-top: 10px;
+    width: 800px;
+    height: 350px;
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
@@ -232,9 +232,9 @@ body {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    margin-top: 3em;
+    margin-top: 1em;
     width: 22.5em;
-    height: 14em;
+    height: 16em;
 }
 
 
@@ -250,7 +250,8 @@ body {
     width: 100%;
     margin-bottom: 10px;
     display: flex;
-    justify-content:space-between
+    justify-content: space-between;
+    padding-top: 2.3px;
 }
 
 .panel-solicitudes {
@@ -310,6 +311,8 @@ body {
 
 .titulo-educacione {
     font-size: 1rem;
+    padding-top: 15px;
+    margin-left: 10px;
 }
 
 .row p {
@@ -330,4 +333,16 @@ body {
     border-radius: 6px;
     border: solid 2px #3798dc;
     margin-bottom: 10px;
+}
+
+.ver-todas2 {
+    color: #4ca5e0;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 6px;
+    border: solid 2px #3798dc;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-top: 5px;
 }
