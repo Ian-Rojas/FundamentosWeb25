@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+}
+
+.titulo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0.4em;
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.link-li {
+    color: white;
+    display: flex;
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+}
+
+.boton {
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding: 0 0.5em;
+    background-color: #17a2b8;
+    color: white;
+    box-shadow: 4px 4px black;
+    border: 5px solid black;
+}
+.links{
+    display: flex;
+    gap: 1em;
+}
+.links ul{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
