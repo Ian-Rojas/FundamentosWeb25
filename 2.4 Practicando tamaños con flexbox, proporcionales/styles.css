@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: solid 1px red;
+}
+
+.main {
+    display: flex;
+    height: 645px;
+}
+
+.izquierdo{
+    flex: 1;
+}
+
+.derecho {
+    flex: 1;
+}
+
+.rectangulo {
+    margin: 10px;
+    height: 190px;
+    width: 400px;
+    background-color: silver;
+}
+
+.linea-recta{
+    background-color: silver;
+    margin: 10px;
+    height: 40px;
+    width: 400px;
+}
+
+.cuadrado {
+    background-color: silver;
+    margin: 10px;
+    height: 140px;
+    width: 140px;
+}
+
+.cuadrado-div {
+    justify-items: end;
+}
