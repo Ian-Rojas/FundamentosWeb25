@@ -16,16 +16,33 @@ function bucleFor() {
     alert(`Los números son: ${array.join(" - ")}`);
 }
 
+// Esta función se llama "ejercicio1"
 function ejercicio1() {
+    
+    // Pide al usuario un número entero con un cuadro de texto (prompt)
+    // Y convierte ese valor a número con parseInt
     let n = parseInt(prompt("Ingrese un número entero: "));
+    
+    // Creamos una variable count para contar desde 1
     let count = 1;
+    
+    // Creamos un arreglo vacío para guardar los números
     let array = [];
+    
+    // Mientras count sea menor o igual que n (el número que el usuario ingresó)
     while (count <= n) {
+        // Agrega el valor de count al arreglo
         array.push(count);
+        
+        // Aumenta count en 1 para seguir con el siguiente número
         count++;
     }
+    
+    // Muestra los números en una ventana emergente (alert)
+    // .join(" - ") une los elementos del arreglo con guiones
     alert(`Los números son: ${array.join(" - ")}`);
 }
+
 
 function ejercicio2() {
     let n = parseInt(prompt("Ingrese un número entero: "));
