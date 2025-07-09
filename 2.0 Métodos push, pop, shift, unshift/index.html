@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-primary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -28,15 +28,31 @@
             </div>
         </div>
     </nav>
-    <main class="container mt-4">
-        <div class="card"">
+    <main class="container mt-5">
+        <section class="row">
+            <section class="col-md-6">
+                <div class="card"">
             <div class=" card-body">
-            <h5 class="card-title">Ejercicio 1: Agregar lista de compras</h5>
-            <input type="text" class="form-control" id="lista">
-            <ul class="card-text" id="resultado"></ul>
-            <a onclick="agregarElementoCompra()" href="#" class="btn btn-danger">Agregar</a>
-        </div>
-        </div>
+                    <h5 class="card-title">Ejercicio 1: Agregar lista de compras</h5>
+                    <input type="text" class="form-control" id="lista">
+                    <ul class="card-text mb-2" id="resultado"></ul>
+                    <a onclick="agregarElementoCompra()" href="#" class="btn btn-danger">Agregar</a>
+                </div>
+                </div>
+            </section>
+            <section class="col-md-6">
+                <div class="card"">
+            <div class=" card-body">
+                    <h5 class="card-title">Ejercicio 2: Quitar ultimo digito</h5>
+                    <input type="text" class="form-control" id="lista2">
+                    <ul class="list-group mb-2" id="resultado2"></ul>
+                    <button onclick="agregarElemento2()" class="btn btn-primary">Agregar</button>
+                    <button onclick="eliminarUltimoElemento()" class="btn btn-danger">Eliminar</button>
+                </div>
+                </div>
+            </section>
+        </section>
+
     </main>
     <script src="script.js"></script>
     <!-- Enlace JS Boostrap -->
