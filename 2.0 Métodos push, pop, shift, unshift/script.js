@@ -42,3 +42,24 @@ function eliminarUltimoElemento() {
     }
     mostrarListaCompra()
 }
+
+let colores = ["rojo", "azul"];
+
+function mostrar_lista_colores() {
+    const input = document.getElementById("lista3");
+    const lista = document.getElementById("resultado3");
+    const nuevoColor = input.value.trim();
+
+    if (nuevoColor !== "") {
+        colores.unshift(nuevoColor);
+    }
+    lista.innerHTML = "";
+    for (let i = 0; i < colores.length; i++) {
+        const li = document.createElement("li");
+        li.className = "list-group-item";
+        li.textContent = colores[i];
+        lista.appendChild(li);
+    }
+    input.value = "";
+    input.focus();
+}
