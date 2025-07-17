@@ -31,34 +31,144 @@
     <main class="container mt-5">
         <section class="row">
             <section class="col-md-6">
-                <div class="card"">
-            <div class=" card-body">
-                    <h5 class="card-title">Ejercicio 1: Agregar lista de compras</h5>
-                    <input type="text" class="form-control" id="lista">
-                    <ul class="card-text mb-2" id="resultado"></ul>
-                    <a onclick="agregarElementoCompra()" href="#" class="btn btn-danger">Agregar</a>
-                </div>
+                <div class="card">
+                    <div class=" card-body">
+                        <h5 class="card-title">Ejercicio 1: Agregar lista de compras</h5>
+                        <input type="text" class="form-control" id="lista">
+                        <ul class="card-text mb-2" id="resultado"></ul>
+                        <a onclick="agregarElementoCompra()" href="#" class="btn btn-primary">Agregar</a>
+                    </div>
                 </div>
             </section>
             <section class="col-md-6">
                 <div class="card">
-            <div class=" card-body">
-                    <h5 class="card-title">Ejercicio 2: Quitar ultimo digito</h5>
-                    <input type="text" class="form-control" id="lista2">
-                    <ul class="list-group mb-2" id="resultado2"></ul>
-                    <button onclick="agregarElemento2()" class="btn btn-primary">Agregar</button>
-                    <button onclick="eliminarUltimoElemento()" class="btn btn-danger">Eliminar</button>
+                    <div class=" card-body">
+                        <h5 class="card-title">Ejercicio 2: Quitar ultimo digito</h5>
+                        <input type="text" class="form-control" id="lista2">
+                        <ul class="list-group mb-2" id="resultado2"></ul>
+                        <button onclick="agregarElemento2()" class="btn btn-primary">Agregar</button>
+                        <button onclick="eliminarUltimoElemento()" class="btn btn-danger">Eliminar</button>
+                    </div>
                 </div>
+            </section>
+        </section>
+        <section class="row">
+            <section class="col-md-6">
+                <div class="card mt-3">
+                    <div class=" card-body">
+                        <h5 class="card-title">Ejercicio 3: Agregar al inicio</h5>
+                        <input type="text" class="form-control" id="lista3">
+                        <ul class="list-group mb-2" id="resultado3"></ul>
+                        <button onclick="mostrarListaColores()" class="btn btn-primary">Agregar</button>
+                    </div>
                 </div>
-                <div class="card mt-4">
-            <div class=" card-body">
-                    <div class="card-body">
-                    <h5 class="card-title">Ejercicio 3: Agregar al inicio</h5>
-                    <input type="text" class="form-control" id="lista3">
-                    <ul class="list-group mb-2" id="resultado3"></ul>
-                    <button onclick="mostrar_lista_colores()" class="btn btn-primary">Mostrar colores</button>
+            </section>
+            <section class="col-md-6">
+                <div class="card mt-3">
+                    <div class=" card-body">
+                        <h5 class="card-title">Ejercicio 4: Eliminar primer elemento</h5>
+                        <input type="text" class="form-control" id="lista4">
+                        <ul class="list-group mb-2" id="resultado4"></ul>
+                        <button onclick="mostrarLista()" class="btn btn-primary">Agregar</button>
+                        <button onclick="eliminarPrimero()" class="btn btn-danger">Eliminar</button>
+                    </div>
                 </div>
+            </section>
+            <section class="col-md-6">
+                <div class="card mt-3">
+                    <div class=" card-body">
+                        <h5 class="card-title">Ejercicio 5: Combinación de métodos</h5>
+                        <input type="text" class="form-control" id="lista5">
+                        <ul class="list-group mb-2" id="resultado5"></ul>
+                        <button onclick="agregar_inicio_ej5()" class="btn btn-primary mt-2">Agregar inicio</button>
+                        <button onclick="eliminar_primer_ej5()" class="btn btn-danger mt-2">Eliminar primero</button>
+                        <button onclick="agregar_ultimo_ej5()" class="btn btn-primary mt-2">Agregar ultimo</button>
+                        <button onclick="eliminar_ultimo_ej5()" class="btn btn-danger mt-2">Eliminar ultimo</button>
+                    </div>
                 </div>
+            </section>
+            <section class="col-md-6">
+                <div class="card mt-3">
+                    <div class=" card-body">
+                        <h5 class="card-title">Ejercicio 6: Agregar elementos en orden inverso</h5>
+                        <input type="text" class="form-control" id="lista4">
+                        <ul class="list-group mb-2" id="resultado4"></ul>
+                        <button onclick="agregarElemento2()" class="btn btn-primary">Agregar</button>
+                        <button onclick="eliminarUltimoElemento()" class="btn btn-danger">Eliminar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="col-md-6">
+                <div class="card mt-3">
+                    <div class=" card-body">
+                        <h5 class="card-title">Ejercicio 7: Historial de mensajes</h5>
+                        <input type="text" class="form-control" id="lista4">
+                        <ul class="list-group mb-2" id="resultado4"></ul>
+                        <button onclick="agregarElemento2()" class="btn btn-primary">Agregar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="col-md-6">
+                <div class="card mt-3">
+                    <div class=" card-body">
+                        <h5 class="card-title">Ejercicio 8: Cola de atención</h5>
+                        <input type="text" class="form-control" id="lista4">
+                        <ul class="list-group mb-2" id="resultado4"></ul>
+                        <button onclick="agregarElemento2()" class="btn btn-primary">Agregar</button>
+                        <button onclick="eliminarUltimoElemento()" class="btn btn-danger">Eliminar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="col-md-6">
+                <div class="card mt-3">
+                    <div class=" card-body">
+                        <h5 class="card-title">Ejercicio 9: Reordenar nombres</h5>
+                        <input type="text" class="form-control" id="lista4">
+                        <ul class="list-group mb-2" id="resultado4"></ul>
+                        <button onclick="agregarElemento2()" class="btn btn-primary">Agregar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="col-md-6">
+                <div class="card mt-3">
+                    <div class=" card-body">
+                        <h5 class="card-title">Ejercicio 10: Pilas y colas</h5>
+                        <input type="text" class="form-control" id="lista4">
+                        <ul class="list-group mb-2" id="resultado4"></ul>
+                        <button onclick="agregarElemento2()" class="btn btn-primary">Agregar</button>
+                        <button onclick="eliminarUltimoElemento()" class="btn btn-danger">Eliminar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="col-md-6">
+                <div class="card mt-3">
+                    <div class=" card-body">
+                        <h5 class="card-title">Ejercicio 11: Completar la semana laboral</h5>
+                        <input type="text" class="form-control" id="lista4">
+                        <ul class="list-group mb-2" id="resultado4"></ul>
+                        <button onclick="agregarElemento2()" class="btn btn-primary">Agregar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="col-md-6">
+                <div class="card mt-3">
+                    <div class=" card-body">
+                        <h5 class="card-title">Ejercicio 12: Registro de personas en una sala</h5>
+                        <input type="text" class="form-control" id="lista4">
+                        <ul class="list-group mb-2" id="resultado4"></ul>
+                        <button onclick="agregarElemento2()" class="btn btn-primary">Agregar</button>
+                        <button onclick="eliminarUltimoElemento()" class="btn btn-danger">Eliminar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="col-md-6">
+                <div class="card mt-3">
+                    <div class=" card-body">
+                        <h5 class="card-title">Ejercicio 13: Lista de tareas actualizada</h5>
+                        <input type="text" class="form-control" id="lista4">
+                        <ul class="list-group mb-2" id="resultado4"></ul>
+                        <button onclick="agregarElemento2()" class="btn btn-primary">Agregar</button>
+                    </div>
                 </div>
             </section>
         </section>
