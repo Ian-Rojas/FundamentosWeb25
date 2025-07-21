@@ -124,7 +124,6 @@ function agregar_inicio_ej5(){
 
 function agregar_ultimo_ej5(){
     const input = document.getElementById("lista5");
-    const valor = input.value.trim(); // Guarda valor sin espacios extras
 
     if (valor === "") return;
     numeros.push(valor) // Agregar valor al final
@@ -146,4 +145,79 @@ function eliminar_ultimo_ej5(){
     numeros.pop();
     }
     mostrarListaNumeros()
+}
+
+orden = []
+
+function mostrarOrden() {
+    const lista = document.getElementById("resultado6");
+    lista.innerHTML = ""; // Limpiar antes de mostrar
+
+    for (let i = 0; i < numeros.length; i++){
+        const li = document.createElement("li")
+        li.className = "list-group-item d-flex justify-content-between align-items-center mb-2";
+        li.textContent = `${orden[i]}`; // <li>texContent</li>
+        lista.appendChild(li);
+    }
+}
+
+function ordenInverso(){
+    const input = document.getElementById("lista6");
+    const valor = input.value.trim(); // Guarda valor sin espacios extras
+
+    if (valor === "") return;
+    orden.unshift(valor) // Agregar valor al final
+
+    input.value = "";
+    input.focus();
+    mostrarOrden()
+}
+
+let historial = []
+let eliminados = []
+
+function mostrarMensajes(){
+    const lista = document.getElementById("resultado7");
+    lista.innerHTML = ""; // Limpiar antes de mostrar
+
+    for (let i = 0; i < historial.length; i++){
+        const li = document.createElement("li")
+        li.className = "list-group-item d-flex justify-content-between align-items-center mb-2";
+        li.textContent = `${historial[i]}`; // <li>texContent</li>
+        lista.appendChild(li);
+    }
+}
+
+function mostrarEliminados(){
+    const lista = document.getElementById("eliminados");
+    lista.innerHTML = ""; // Limpiar antes de mostrar
+
+    for (let i = 0; i < eliminados.length; i++){
+        const li = document.createElement("li")
+        li.className = "list-group-item d-flex justify-content-between align-items-center mb-2";
+        li.textContent = `${eliminados[i]}`; // <li>texContent</li>
+        lista.appendChild(li);
+    }
+}
+
+function agregarFinal(){
+    const input = document.getElementById("lista7");
+    const valor = input.value.trim();
+
+    if (valor === "") return;
+    historial.push(valor) // Agregar valor al final
+
+    input.value = "";
+    input.focus(); // Agrega foco hacia input
+
+    mostrarMensajes()
+}
+
+function eliminarUltimo(){
+    if (historial.length > 0) {
+        const borrados = historial.pop()
+        eliminados.push(borrados);
+    }
+    mostrarEliminados();
+    mostrarMensajes();
 }
