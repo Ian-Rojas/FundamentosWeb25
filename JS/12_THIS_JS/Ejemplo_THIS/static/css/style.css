@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 18%;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.add-def {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+}
+
+nav {
+    background-color: #CCCCCC;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1em;
+    padding-block: 1em;
+}
+
+#browser {
+    font-size: 1.2em;
+    margin-block: 0.8em;
+    padding: 0.5rem;
+    border: 0.5vh solid black;
+    border-radius: 3px;
+    width: 45%;
+}
+
+#login {
+    background-color: #2B78E4;
+    color: #fff;
+    padding: 0.3em 1em;
+    margin: 5px;
+    font-size: 2.3vh;
+    border: 2px solid black;
+    box-shadow: 0.2em 0.2em rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 7vh;
+}
+
+h2 {
+    font-size: 3vh;
+}
+
+.header {
+    display: flex;
+    flex: 1;
+    margin: 0.6em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.likes button {
+    background-color: #FFD966;
+    padding: 0.3em 0.5em;
+    margin: 10px;
+    font-size: 1.2em;
+    width: 7em;
+    height: 2.4em;
+    font-weight: 600;
+    border: 2px solid black;
+    box-shadow: 0.2em 0.2em rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+.likes {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.card-1 {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    border: 0.6vh solid black;
+    border-radius: 3px;
+    width: 80%;
+    height: 28vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9%;
+}
+
+.word {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10em;
+}
+
+.card-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 3em;
+}
+
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    border: 0.6vh solid black;
+    border-radius: 3px;
+    width: 100%;
+    height: 26vh;
+    margin-top: 18%;
+}
+
+.card-2 h2 {
+    font-size: 3vh;
+    margin-inline: 8%;
+}
+
+#add {
+    background-color: #93C47D;
+    padding: 0.2em 1.1em;
+    margin: 1.2rem;
+    font-size: 3vh;
+    width: 36vh;
+    border: 2px solid black;
+    box-shadow: 0.2em 0.2em rgba(0, 0, 0, 1);
+    cursor: pointer;
+}

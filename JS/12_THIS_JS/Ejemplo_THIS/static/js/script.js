@@ -1,15 +1,19 @@
-function example(elemento){
-    console.log("elemento clickeado", elemento);
+let contador1 = 13;
+function sumarLikes() {
+    document.getElementById('contadorLikes-1').textContent = contador1;
+    contador1++;
 }
 
-function turnOff(element){
-    if (element.innerText = "On"){
-        element.innerText = "Off";
-    }else{
-        element.innerText = "On"
-    }
+let contador2 = 37;
+function sumarLikes2() {
+    document.getElementById('contadorLikes-2').textContent = contador2;
+    contador2++;
 }
 
-function hide(element){
+function login(element) {
+    element.innerText = "Logout";
+}
+
+function hide(element) {
     element.remove();
 }
