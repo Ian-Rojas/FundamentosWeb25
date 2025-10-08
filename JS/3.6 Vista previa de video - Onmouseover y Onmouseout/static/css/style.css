@@ -65,3 +65,32 @@ img {
     justify-content: space-between;
     align-items: center;
 }
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.col-r {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1em;
+}
+
+.col-r h3{
+    border-bottom: solid black 1px;
+}
+
+.sub-header {
+    height: 10%;
+    width: 100%;
+}
+
+.video-small {
+    margin-bottom: 3em;
+}
+
+.video-main {
+    height: 300px;
+    width: 520px;
+}
