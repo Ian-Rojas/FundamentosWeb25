@@ -83,11 +83,25 @@ img {
 
 .sub-header {
     height: 10%;
-    width: 100%;
+    width: 68%;
 }
 
 .video-small {
-    margin-bottom: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30em;
+    flex-direction: row;
+    gap: 2vh;
+    margin-top: 2vh;
+}
+
+.flex-container{
+    height: 100%;
+}
+
+.height {
+    display: flex;
+    height: 120px;
 }
 
 .video-main {
