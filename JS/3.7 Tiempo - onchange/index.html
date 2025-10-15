@@ -1,20 +1,97 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiempo Climatico</title>
+    <title>DojoWeather</title>
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>DojoWeather</h1>
-        <div>
-            <p></p>
-            <p></p>
-            <p></p>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="logo">DojoWeather</div>
+            <div class="nav-links">
+                <a href="#">Burbank</a>
+                <a href="#">Chicago</a>
+                <a href="#">Dallas</a>
+            </div>
         </div>
-    </header>
+    </nav>
 
+    <div class="container">
+        <div class="location-header">
+            <h1>San Jose</h1>
+            <div class="temp-selector">
+                <span>show temperature in</span>
+                <select>
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="forecast-grid">
+            <div class="day-card">
+                <div class="day-name">Today</div>
+                <div class="weather-icon">🌧️</div>
+                <div class="weather-desc">some rain</div>
+                <div class="temperatures">
+                    <span class="temp-high">24°</span>
+                    <span class="temp-low">18°</span>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-name">Tomorrow</div>
+                <div class="weather-icon">☀️</div>
+                <div class="weather-desc">some sun</div>
+                <div class="temperatures">
+                    <span class="temp-high">27°</span>
+                    <span class="temp-low">19°</span>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-name">Friday</div>
+                <div class="weather-icon">☁️</div>
+                <div class="weather-desc">some clouds</div>
+                <div class="temperatures">
+                    <span class="temp-high">21°</span>
+                    <span class="temp-low">16°</span>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-name">Saturday</div>
+                <div class="weather-icon">☀️</div>
+                <div class="weather-desc">some sun</div>
+                <div class="temperatures">
+                    <span class="temp-high">26°</span>
+                    <span class="temp-low">21°</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="cookie-banner">
+            <div class="cookie-icon">🍪</div>
+            <div class="cookie-content">
+                <div class="cookie-title">Stop! Cookie time</div>
+                <div class="cookie-text">
+                    We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a>
+                </div>
+            </div>
+            <div class="cookie-actions">
+                <button class="accept-btn">I Accept</button>
+                <div class="cookie-images">
+                    <div class="cookie-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="cookie-img" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="cookie-img" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="cookie-img" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                    <div class="cookie-img" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="static/js/script.js"></script>
 </body>
 </html>
