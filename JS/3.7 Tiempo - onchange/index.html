@@ -11,21 +11,21 @@
         <div class="navbar-left">
             <div class="logo">DojoWeather</div>
             <div class="nav-links">
-                <a href="#">Burbank</a>
-                <a href="#">Chicago</a>
-                <a href="#">Dallas</a>
+                <a href="#" onclick="showLoading('Burbank')">Burbank</a>
+                <a href="#" onclick="showLoading('Chicago')">Chicago</a>
+                <a href="#" onclick="showLoading('Dallas')">Dallas</a>
             </div>
         </div>
     </nav>
 
     <div class="container">
         <div class="location-header">
-            <h1>San Jose</h1>
+            <h1 id="city-name">San Jose</h1>
             <div class="temp-selector">
-                <span>show temperature in</span>
-                <select>
-                    <option>°C</option>
-                    <option>°F</option>
+                <span>Show temperature in</span>
+                <select id="tempSelect" onchange="convertTemps()">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
                 </select>
             </div>
         </div>
@@ -36,8 +36,8 @@
                 <div class="weather-icon">🌧️</div>
                 <div class="weather-desc">some rain</div>
                 <div class="temperatures">
-                    <span class="temp-high">24°</span>
-                    <span class="temp-low">18°</span>
+                    <span class="temp-high" data-c="24">24°</span>
+                    <span class="temp-low" data-c="18">18°</span>
                 </div>
             </div>
 
@@ -46,8 +46,8 @@
                 <div class="weather-icon">☀️</div>
                 <div class="weather-desc">some sun</div>
                 <div class="temperatures">
-                    <span class="temp-high">27°</span>
-                    <span class="temp-low">19°</span>
+                    <span class="temp-high" data-c="27">27°</span>
+                    <span class="temp-low" data-c="19">19°</span>
                 </div>
             </div>
 
@@ -56,8 +56,8 @@
                 <div class="weather-icon">☁️</div>
                 <div class="weather-desc">some clouds</div>
                 <div class="temperatures">
-                    <span class="temp-high">21°</span>
-                    <span class="temp-low">16°</span>
+                    <span class="temp-high" data-c="21">21°</span>
+                    <span class="temp-low" data-c="16">16°</span>
                 </div>
             </div>
 
@@ -66,29 +66,26 @@
                 <div class="weather-icon">☀️</div>
                 <div class="weather-desc">some sun</div>
                 <div class="temperatures">
-                    <span class="temp-high">26°</span>
-                    <span class="temp-low">21°</span>
+                    <span class="temp-high" data-c="26">26°</span>
+                    <span class="temp-low" data-c="21">21°</span>
                 </div>
             </div>
         </div>
 
-        <div class="cookie-banner">
+        <div id="loading-message" class="loading-message"></div>
+
+        <div class="cookie-banner" id="cookie-banner">
             <div class="cookie-icon">🍪</div>
             <div class="cookie-content">
                 <div class="cookie-title">Stop! Cookie time</div>
                 <div class="cookie-text">
-                    We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a>
+                    We use cookies (sadly not the edible ones) to personalize content and ads, 
+                    to provide social media features and to analyse our traffic. 
+                    <a href="#">Read more...</a>
                 </div>
             </div>
             <div class="cookie-actions">
-                <button class="accept-btn">I Accept</button>
-                <div class="cookie-images">
-                    <div class="cookie-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                    <div class="cookie-img" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                    <div class="cookie-img" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-                    <div class="cookie-img" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
-                    <div class="cookie-img" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
-                </div>
+                <button class="accept-btn" onclick="acceptCookies()">I Accept</button>
             </div>
         </div>
     </div>
